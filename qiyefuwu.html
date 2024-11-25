@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>阿里云平台文档</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover {
+    background-color: #000000;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+
+<style>
+    .navbar {
+      display: flex;
+      justify-content: flex-end; /* 将导航栏中的元素靠右排列 */
+      list-style: none;
+      background-color: #fff;
+      padding: 0;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin: 0; /* 移除默认的margin */
+      padding: 10px; /* 添加一些内边距 */
+    }
+    
+    .navbar li {
+      padding: 10px 15px;
+    }
+    
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .search-box input[type="text"] {
+      flex-grow: 1;
+      padding: 8px 10px; /* 减小内边距 */
+      border: none;
+      border-radius: 4px 0 0 4px; /* 调整圆角 */
+      box-sizing: border-box;
+      font-size: 14px; /* 减小字体大小 */
+    }
+    
+    .search-box button {
+      padding: 8px 12px; /* 减小内边距 */
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0; /* 调整圆角 */
+      cursor: pointer;
+      font-size: 14px; /* 减小字体大小 */
+    }
+    
+    .search-box button:hover {
+      background-color: black;
+    }
+    </style>
+    </head>
+
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">首页</a></li>
+        <!-- <li><a href="#news">新闻</a></li> -->
+      
+        <li>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">数据集</a>
+            <div class="dropdown-content">
+              <a href="https://www.kaggle.com/datasets">kaggle 数据</a>
+              <a href="https://huggingface.co/datasets">hugging face 数据</a>
+              <a href="https://tianchi.aliyun.com/dataset">天池 数据</a>
+              <a href="#">自建数据（公开、竞赛）</a>
+              <a href="#">明珠数据集（金数据平台）</a>
+              <a href="#">数据采集方式</a>
+              <a href="https://www.aliyun.com/product/bigdata/learn/itag">数据标注（阿里云）</a>
+            </div>
+          </div>
+        </li>
+      
+        <li>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">模型</a>
+            <div class="dropdown-content">
+              <a href="https://www.kaggle.com/">kaggle 模型</a>
+              <a href="https://huggingface.co/" title="也可以提供GitHub库">hugging face 模型</a>
+              <a href="#">南航模型（公开）</a>
+              <a href="#">明珠模型（进阶版）</a>
+              
+            </div>
+          </div>
+        </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">服务</a>
+              <div class="dropdown-content">
+                <a href="https://www.kaggle.com/code">kaggle code</a>
+                <a href="https://huggingface.co/spaces">hugging face spaces</a>
+                <a href="https://www.aliyun.com/activity/bigdata/pai/dsw">阿里云PAI-DESIGNER</a>
+                <a href="https://www.aliyun.com/activity/bigdata/pai/dsw">阿里云PAI-DSW</a>
+                <a href="https://www.gradio.app/docs">pypi式</a>
+                <a href="https://www.gradio.app/docs">嵌入式</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">竞赛</a>
+              <div class="dropdown-content">
+                <a href="https://www.kaggle.com/competitions">kaggle competitions</a>
+                <a href="https://tianchi.aliyun.com/competition/" title="包括AI大模型、数据算法、工程开发、日常学习赛、学生大赛、天池大赛、阿里云大赛等">天池大赛</a>
+
+                <a href="#">明珠竞赛</a>
+                <a href="#">我要举办</a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">学习营地</a>
+              <div class="dropdown-content">
+                <a href="https://www.kaggle.com/learn">kaggle learn</a>
+                <a href="https://huggingface.co/docs">hugging face Docs</a>
+                <a href="https://tianchi.aliyun.com/specials/promotion/tianchi/course/homepage">天池学习</a>
+                <a href="#">明珠编程课</a>
+
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">社区</a>
+              <div class="dropdown-content">
+                <a href="https://www.kaggle.com/discussions">kaggle discussion</a>
+                <a href="https://huggingface.co" title="包括blog GitHub等">hugging face community</a>
+                <a href="https://tianchi.aliyun.com/forum/new/">天池 技术圈</a>
+                <a href="#">明珠编程社区</a>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="search-box">
+            <input type="text" id="search" name="search" placeholder="输入搜索内容...">
+            <button type="submit">搜索</button>
+          </li>
+      </ul>
+
+<h3>阿里云</h3>
+<p>可以设计为阿里云产品首页如下：</p>
+<iframe allowfullscreen src="https://www.aliyun.com/product/list" width=100% height=600></iframe>
+
+</body>
+</html>
